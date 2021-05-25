@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="266.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.exemple.gui.MenuController">
+   <children>
+      <Button fx:id="btnSceneInfos" layoutX="14.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleBtnInfos" prefHeight="50.0" prefWidth="150.0" text="Informations">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnTraitement" layoutX="236.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleBtnTraitement" prefHeight="50.0" prefWidth="150.0" text="Traitements">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="434.0" layoutY="116.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Ajouts">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="74.0" prefWidth="568.0" text="Informations table fournisseur">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

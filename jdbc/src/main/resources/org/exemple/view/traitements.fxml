@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.exemple.gui.TraitementsController">
+   <children>
+      <Label layoutX="39.0" layoutY="68.0" text="Choix du fournisseur">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selectFournis" layoutX="177.0" layoutY="64.0" onAction="#handleComboBox" prefHeight="25.0" prefWidth="230.0" promptText="Selectionner un fournisseur" />
+      <TextArea fx:id="infosCom" layoutX="39.0" layoutY="113.0" prefHeight="200.0" prefWidth="368.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="43.0" />
+   </children>
+</AnchorPane>
