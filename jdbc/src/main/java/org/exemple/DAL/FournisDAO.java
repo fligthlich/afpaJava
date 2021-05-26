@@ -34,6 +34,7 @@ public class FournisDAO extends AbstractDAO{
             System.out.println("une erreur s'est produit");
             e.getMessage();
         }
+        // On retourne une liste d'objet de Fournis
         return list;
     }
 
@@ -61,11 +62,26 @@ public class FournisDAO extends AbstractDAO{
                 fournis = new Fournis(numfou, nomfou, ruefou, posfou, vilfou, confou, satisf);
 
             }
-
         }catch (SQLException e){
             e.getMessage();
         }
-
+        // On retourne un objet de type fournis
         return fournis;
     }
+
+    public void addNewProvider(String nomfou, String ruefou, String posfou, String vilfou, String confou){
+        try {
+            PreparedStatement stmt = con.prepareStatement("INSERT INTO fournis (`nomfou`, `ruefou`, `posfou`, `vilfou`, `confou`) VALUES (?,?,?,?,?)");
+            stmt.setString(1, nomfou);
+            stmt.setString(2,ruefou);
+            stmt.setString(3, posfou);
+            stmt.setString(4, vilfou);
+            stmt.setString(5, confou);
+            stmt.executeUpdate();
+
+        }catch (SQLException e){
+            System.out.println("erreur dans la requête");
+        }
+    }
+
 }

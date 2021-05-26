@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import org.exemple.DAL.Fournis;
 import org.exemple.DAL.FournisDAO;
@@ -21,6 +22,8 @@ public class MainApp extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
-
+//        FournisDAO fournisDAO = new FournisDAO();
+//        fournisDAO.addNewProvider("Gros", "rue du cake", "80000", "Amiens", "Alex");
     }
+
 }

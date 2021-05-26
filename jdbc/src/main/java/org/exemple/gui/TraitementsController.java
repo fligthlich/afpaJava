@@ -11,13 +11,12 @@ import org.exemple.DAL.EntcomDAO;
 import org.exemple.DAL.Fournis;
 import org.exemple.DAL.FournisDAO;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class TraitementsController {
 
-
+    @FXML
     public ComboBox selectFournis;
+    @FXML
     public TextArea infosCom;
 
     /**
@@ -32,6 +31,11 @@ public class TraitementsController {
         }
     }
 
+    /**
+     * Méthode qui permet d'afficher les commandes d'un client dans le text-aréa
+     * @param event
+     */
+    @FXML
     public void handleComboBox(ActionEvent event) {
         //Ici tu dois afficher le resultat de l'action dans la console quand tu clique ça doit renvoi la valeur
         if (selectFournis.getValue() != null){
@@ -42,6 +46,5 @@ public class TraitementsController {
             }
             infosCom.setText(lst);
         }
-
     }
 }
